@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilkostnadskollen - Integritetspolicy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .language-switcher {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .language-switcher button {
+            background: none;
+            border: 2px solid #0066cc;
+            color: #0066cc;
+            padding: 8px 16px;
+            margin-left: 8px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .language-switcher button.active {
+            background-color: #0066cc;
+            color: white;
+        }
+
+        .language-switcher button:hover {
+            background-color: #0066cc;
+            color: white;
+        }
+
+        .header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: #0066cc;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .language-section {
+            display: none;
+        }
+
+        .language-section.active {
+            display: block;
+        }
+
+        .section {
+            margin-bottom: 32px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            color: #0066cc;
+            margin-bottom: 12px;
+            margin-top: 20px;
+        }
+
+        .section h3 {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+            margin-top: 16px;
+        }
+
+        .section p {
+            margin-bottom: 12px;
+            color: #555;
+        }
+
+        .section ul {
+            margin-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .highlight {
+            background-color: #f0f4ff;
+            padding: 16px;
+            border-left: 4px solid #0066cc;
+            margin-bottom: 16px;
+            border-radius: 4px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .contact-info {
+            background-color: #f9f9f9;
+            padding: 16px;
+            border-radius: 4px;
+            margin-top: 16px;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px 16px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .language-switcher {
+                position: static;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .language-switcher button {
+                margin: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="sv">Svenska</button>
+        <button class="lang-btn" data-lang="en">English</button>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1>Bilkostnadskollen</h1>
+            <p>Integritetspolicy och dataskydd</p>
+        </div>
+
+        <!-- SWEDISH VERSION -->
+        <div class="language-section active" data-lang="sv">
+            <div class="highlight">
+                <strong>Sist uppdaterad:</strong> Februari 2026
+            </div>
+
+            <div class="section">
+                <h2>Om denna integritetspolicy</h2>
+                <p>
+                    Denna integritetspolicy förklarar hur Bilkostnadskollen-appen ("Appen") hanterar din information.
+                    Vi är starkt engagerade i att skydda din integritet och transparens kring hur vi arbetar med data.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Ingen insamling av personuppgifter</h2>
+                <p>
+                    <strong>Bilkostnadskollen samlar INTE in någon personlig data.</strong>
+                </p>
+                <p>Appen kräver inga inloggningsuppgifter, registrering eller personlig information för att fungera.
+                Vi samlar inte in följande:</p>
+                <ul>
+                    <li>Namn, epostadress eller telefonnummer</li>
+                    <li>Geografisk plats eller GPS-data</li>
+                    <li>Enhetsidentifierare eller unika ID:n</li>
+                    <li>Användaraktivitet eller analitik</li>
+                    <li>Annonsinformation eller spårningsdata</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Lokal datalagring</h2>
+                <p>
+                    All data lagras <strong>enbart lokalt på din enhet</strong> och överförs aldrig till några servrar eller tjänster på nätet.
+                </p>
+                <h3>Vad lagras lokalt:</h3>
+                <ul>
+                    <li><strong>Sparade scenarier:</strong> Dina bilkostnadsberäkningar lagras i Room-databasen på enheten</li>
+                    <li><strong>Användarinställningar:</strong> Dina preferenser (mörkt läge, språkval) lagras i Android DataStore</li>
+                </ul>
+                <p>
+                    Du har fullständig kontroll över denna data. Du kan när som helst ta bort Appen för att radera alla lagrade data från din enhet.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Internet och konnektivitet</h2>
+                <p>
+                    <strong>Alla beräkningar sker lokalt på din enhet</strong> och kräver ingen internetanslutning.
+                    Den enda internetkommunikationen sker vid köp av Pro-versionen via Google Play, där transaktionen
+                    hanteras helt av Google Plays betalningssystem. Vi har aldrig tillgång till dina betalningsuppgifter.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Tredjepartstjänster och SDK:er</h2>
+                <p>
+                    Appen använder <strong>ingen analys-, annons- eller spårningssoftware.</strong>
+                </p>
+                <h3>Google Play Billing</h3>
+                <p>
+                    Vi använder Google Play Billing Library för köp av Pro-versionen. Denna tjänst hanteras
+                    av Google och omfattas av <a href="https://policies.google.com/privacy">Googles integritetspolicy</a>.
+                    Vi lagrar enbart din köpstatus (Pro/gratis) lokalt på enheten.
+                </p>
+                <h3>Vi använder INTE:</h3>
+                <ul>
+                    <li>Google Analytics eller liknande analitiktjänster</li>
+                    <li>Annonsnätverk eller annonsplattformar</li>
+                    <li>SDK:er för spårning eller identifiering</li>
+                    <li>Sociala medier-SDK:er</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Barnens integritet</h2>
+                <p>
+                    Bilkostnadskollen är utformad för vuxna användare men kan användas av alla åldrar.
+                    Eftersom appen inte samlar någon personlig data spelar ålder ingen roll för integritetsskyddet.
+                    Om du är förälder eller vårdnadshavare och har frågor kan du kontakta oss.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Ändringar av denna policy</h2>
+                <p>
+                    Vi kan uppdatera denna integritetspolicy från tid till tid. Om vi gör väsentliga ändringar
+                    kommer vi att uppdatera datumet överst på denna sida. Din fortsatta användning av Appen
+                    innebär att du accepterar ändringar.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Kontaktuppgifter</h2>
+                <p>
+                    Om du har frågor eller problem angående denna integritetspolicy eller Appens hantering av data,
+                    kontakta oss gärna:
+                </p>
+                <div class="contact-info">
+                    <p><strong>Företag:</strong> Norden Digital</p>
+                    <p><strong>Epost:</strong> nordendigital1@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2026 Norden Digital. Alla rättigheter förbehålles.</p>
+            </div>
+        </div>
+
+        <!-- ENGLISH VERSION -->
+        <div class="language-section" data-lang="en">
+            <div class="highlight">
+                <strong>Last Updated:</strong> February 2026
+            </div>
+
+            <div class="section">
+                <h2>About This Privacy Policy</h2>
+                <p>
+                    This privacy policy explains how the Bilkostnadskollen app ("App") handles your information.
+                    We are strongly committed to protecting your privacy and being transparent about how we handle data.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>No Personal Data Collection</h2>
+                <p>
+                    <strong>Bilkostnadskollen does NOT collect any personal data.</strong>
+                </p>
+                <p>The App requires no login credentials, registration, or personal information to function.
+                We do not collect the following:</p>
+                <ul>
+                    <li>Names, email addresses, or phone numbers</li>
+                    <li>Geographic location or GPS data</li>
+                    <li>Device identifiers or unique IDs</li>
+                    <li>User activity or analytics</li>
+                    <li>Advertising information or tracking data</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Local Data Storage</h2>
+                <p>
+                    All data is stored <strong>exclusively on your device</strong> and is never transmitted to any servers or online services.
+                </p>
+                <h3>What is stored locally:</h3>
+                <ul>
+                    <li><strong>Saved Scenarios:</strong> Your car cost calculations are stored in the Room database on your device</li>
+                    <li><strong>User Preferences:</strong> Your preferences (dark mode, language selection) are stored in Android DataStore</li>
+                </ul>
+                <p>
+                    You have complete control over this data. You can delete the App at any time to remove all stored data from your device.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Internet and Connectivity</h2>
+                <p>
+                    <strong>All calculations happen locally on your device</strong> and require no internet connection.
+                    The only internet communication occurs when purchasing the Pro version through Google Play,
+                    where the transaction is handled entirely by Google's payment system. We never have access to your payment details.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Third-Party Services and SDKs</h2>
+                <p>
+                    The App uses <strong>no analytics, advertising, or tracking software.</strong>
+                </p>
+                <h3>Google Play Billing</h3>
+                <p>
+                    We use Google Play Billing Library for Pro version purchases. This service is managed
+                    by Google and is covered by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
+                    We only store your purchase status (Pro/free) locally on your device.
+                </p>
+                <h3>We do NOT use:</h3>
+                <ul>
+                    <li>Google Analytics or similar analytics services</li>
+                    <li>Advertising networks or ad platforms</li>
+                    <li>Tracking or identification SDKs</li>
+                    <li>Social media SDKs</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Children's Privacy</h2>
+                <p>
+                    Bilkostnadskollen is designed for adult users but can be used by people of all ages.
+                    Since the App does not collect any personal data, age does not affect privacy protection.
+                    If you are a parent or guardian with questions, please feel free to contact us.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Changes to This Policy</h2>
+                <p>
+                    We may update this privacy policy from time to time. If we make material changes,
+                    we will update the date at the top of this page. Your continued use of the App
+                    constitutes your acceptance of any changes.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Contact Information</h2>
+                <p>
+                    If you have any questions or concerns regarding this privacy policy or the App's handling of data,
+                    please don't hesitate to contact us:
+                </p>
+                <div class="contact-info">
+                    <p><strong>Company:</strong> Norden Digital</p>
+                    <p><strong>Email:</strong> nordendigital1@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2026 Norden Digital. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.lang-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+
+                // Update active button
+                document.querySelectorAll('.lang-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+
+                // Update active language section
+                document.querySelectorAll('.language-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.querySelector(`.language-section[data-lang="${lang}"]`).classList.add('active');
+
+                // Scroll to top
+                window.scrollTo(0, 0);
+            });
+        });
+    </script>
+</body>
+</html>
